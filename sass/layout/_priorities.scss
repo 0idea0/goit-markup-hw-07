@@ -1,0 +1,49 @@
+.project {
+  display: flex;
+  align-items: center;
+}
+
+.priorities-items:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-priorities-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.our-priorities-list-icon {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 10px;
+
+  color: var(--title-color);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+
+  color: var(--link-grey-color);
+}
