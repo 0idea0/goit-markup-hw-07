@@ -44,10 +44,10 @@
   color: var(--link-white-color);
 
   transition: background-color 250ms var(--transition-timing-function);
-}
 
-.hero-section-btn:hover,
-.hero-section-btn:focus {
-  background-color: #188ce8;
-  color: var(--link-white-color);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    color: var(--link-white-color);
+  }
 }

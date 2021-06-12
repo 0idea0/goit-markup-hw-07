@@ -1,14 +1,14 @@
-.contacts-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.contacts-item:hover {
-  color: var(--accent-color);
-}
-
 .contacts {
   display: flex;
   align-items: center;
+
+  &-item:hover {
+    color: var(--accent-color);
+  }
+
+  &-item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .mail-link {
@@ -21,6 +21,11 @@
   transition-property: var(--accent-color);
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .envelope-icon {
@@ -29,11 +34,11 @@
   height: 12px;
   fill: var(--link-grey-color);
   margin-right: 10px;
-}
 
-.mail-link:hover .envelope-icon,
-.mail-link:focus .envelope-icon {
-  fill: currentColor;
+  .mail-link:hover &,
+  .mail-link:focus & {
+    fill: currentColor;
+  }
 }
 
 .smartphone-icon {
@@ -43,16 +48,11 @@
   fill: var(--link-grey-color);
   align-items: center;
   margin-right: 10px;
-}
 
-.tel-link:hover .smartphone-icon,
-.tel-link:focus .smartphone-icon {
-  fill: currentColor;
-}
-
-.mail-link:hover,
-.mail-link:focus {
-  color: var(--accent-color);
+  .tel-link:hover &,
+  .tel-link:focus & {
+    fill: currentColor;
+  }
 }
 
 .tel-link {
@@ -66,9 +66,9 @@
   transition-property: var(--accent-color);
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
-}
 
-.tel-link:hover,
-.tel-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

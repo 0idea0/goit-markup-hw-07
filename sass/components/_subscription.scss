@@ -17,7 +17,7 @@
   margin-top: 20px;
 }
 
-.subscroption-form {
+.subscription-form {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -28,15 +28,15 @@
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-}
 
-.subscroption-form::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .subscription-btn {
@@ -61,12 +61,12 @@
   cursor: pointer;
 
   transition: background-color 250ms var(--transition-timing-function);
-}
 
-.subscription-btn:hover,
-.subscription-btn:focus {
-  background-color: #188ce8;
-  color: var(--link-white-color);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    color: var(--link-white-color);
+  }
 }
 
 .subscription-icon {

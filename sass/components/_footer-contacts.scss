@@ -10,6 +10,11 @@
   font-style: normal;
 
   transition: color 250ms var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .link-footer {
@@ -23,18 +28,13 @@
   font-style: normal;
 
   transition: color 250ms var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .mail {
   margin-bottom: 9px;
-}
-
-.map-link:hover,
-.map-link:focus {
-  color: var(--accent-color);
-}
-
-.link-footer:hover,
-.link-footer:focus {
-  color: var(--accent-color);
 }

@@ -3,6 +3,11 @@
   height: 20px;
 
   fill: #afb1b8;
+
+  .social-list-link:hover &,
+  .social-list-link:focus & {
+    fill: var(--link-white-color);
+  }
 }
 
 .social-list-link {
@@ -14,14 +19,9 @@
   background-color: var(--link-white-color);
   border-radius: 50%;
   transition: background-color 250ms var(--transition-timing-function);
-}
 
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--accent-color);
-}
-
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--link-white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }

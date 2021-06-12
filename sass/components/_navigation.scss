@@ -6,6 +6,10 @@
 .navigation-list {
   display: flex;
   align-items: center;
+
+  &-item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .navigation-list-link {
@@ -21,13 +25,9 @@
   transition-property: var(--accent-color);
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
-}
 
-.navigation-list-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.navigation-list-link:hover,
-.navigation-list-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
